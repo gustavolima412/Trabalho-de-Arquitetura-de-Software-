@@ -1,0 +1,23 @@
+{
+  "name": "reserva-salas",
+  "version": "1.0.0",
+  "description": "API de reserva de salas - monolito em camadas (Trabalho de Arquitetura de Software 2026/2)",
+  "private": true,
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "test": "tsc && node --test dist/negocio/reserva-service.test.js",
+    "verificar-camadas": "node ferramentas/verificar-camadas.mjs"
+  },
+  "dependencies": {
+    "express": "4.21.2",
+    "pg": "8.13.1"
+  },
+  "devDependencies": {
+    "@types/express": "4.17.21",
+    "@types/node": "20.17.10",
+    "@types/pg": "8.11.10",
+    "typescript": "5.7.2"
+  }
+}
